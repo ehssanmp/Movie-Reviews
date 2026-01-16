@@ -1,0 +1,58 @@
+# Python virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# MLflow artifacts and tracking (important: don't commit experiment runs/models locally)
+mlruns/
+
+# Jupyter/IPython notebooks
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IDE/Editor files
+.idea/          # PyCharm/JetBrains
+.vscode/        # VS Code
+*.sublime-*     # Sublime Text
+
+# OS-specific
+.DS_Store       # macOS
+Thumbs.db       # Windows
+
+# Logs and temp files
+*.log
+*.tmp
+temp/
+
+# Build/dist artifacts (for packaging later)
+build/
+dist/
+*.egg-info/
+*.eggs
+
+# Environment variables/secrets
+.env
+.config
+secrets/
+
+# Docker (we'll add this later, but good to include now)
+Dockerfile.*    # If you have variants
+.dockerignore
+
+# Kubernetes (later stages)
+*.yaml.bak
+k8s/temp/
+
+# Optional: Large data files (if you download datasets locally)
+data/
+datasets/
+*.csv
+*.json
+*.parquet
